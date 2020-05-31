@@ -2,7 +2,7 @@
     ViewData["Title"] = "O Projeto";
 }
 <div class="wrapper">
-    <div class="sidebar">
+    <div class="sidebar" data="blue">
         <!--
             Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
         -->
@@ -12,7 +12,7 @@
                     TO
                 </a>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="simple-text logo-normal">
-                    Turtle Overdrive
+                    Turtle Project
                 </a>
             </div>
             <ul class="nav">
@@ -29,9 +29,9 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Viabilidade">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Dados">
                         <i class="tim-icons icon-check-2"></i>
-                        <p>Viabilidade</p>
+                        <p>Dados</p>
                     </a>
                 </li>
                 <li>
@@ -49,7 +49,7 @@
             </ul>
         </div>
     </div>
-    <div class="main-panel">
+    <div class="main-panel" data="blue">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
             <div class="container-fluid">
@@ -63,20 +63,12 @@
                     </div>
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">O Projeto</a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                    <span class="navbar-toggler-bar navbar-kebab"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
                         <li class="search-bar input-group">
-                            <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal">
-                                <i class="tim-icons icon-zoom-split"></i>
-                                <span class="d-lg-none d-md-block">Search</span>
-                            </button>
+                            <!-- TODO -->
                         </li>
-                        
+
                         <li class="separator d-lg-none"></li>
                     </ul>
                 </div>
@@ -96,7 +88,58 @@
         </div>
         <!-- End Navbar -->
         <div class="content">
-            
+            <!-- Start HERE!!! -->
+            <!-- TODO - CHANGE IMAGE -->
+            <div class="card mb-3">
+                <img class="card-img-top" src="./assets/img/turtle-logo.png" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">O que é o Turtle Project?</h2>
+                    <p class="card-text">É um mecanismo de transporte mais eficiente, barato, rápido e sustentavelmente ecológico. O projeto propõe-se a minimizar os impactos causados pela ação humana nos ecossistemas marinhos, empregando para o transporte de mercadorias (cargas) o uso de túneis submersos, com a técnica de levitação magnética. Os impactos seriam minimizados em virtude de, a redução de embarcações marítimas para importações e exportações, preservação dos ecossistemas locais sem intervenção de espécies invasoras  que viajam em cargueiros, velocidade no transporte intercontinental e redução no valor de frete por conta da redução do tempo e custo do processo.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-nav-tabs">
+                        <h2 class="card-header card-header-info">Motivos para Escolher o Turtle Project</h2>
+                        <div class="card-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Inovador</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sustentavel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seguro</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rapido</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conectivo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eficaz</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="../assets/img/tunnel-brian.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Tecnologias Utilizadas</h2>
+                            <p class="card-text">O “Turtle  Project” consiste em utilizar tecnologias de energia magnética, como o comboio de levitação magnética “Maglev”, onde existem três tipos de tecnologias aplicadas. Existe a tecnologia sobre ímãs supercondutores, que trabalham sobre uma suspensão eletrodinâmica, a segunda tecnologia é a reação controlada de eletroímãs, onde se aplica a suspensão eletromagnética, e por fim a com maior potencial e econômica, na qual são utilizados os ímãs permanentes, a Inductrack.</p>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <footer class="footer">
             <div class="container-fluid">
@@ -108,7 +151,7 @@
                     </li>
                 </ul>
                 <div class="copyright">
-                    © Feito com o <i class="tim-icons icon-heart-2"></i> pela equipe 197 - Overdrive.
+                    <a asp-area="" asp-controller="Home" asp-action="Equipe" class="nav-link"> © 2020 Feito com o <i class="tim-icons icon-heart-2"></i> pela equipe 197 - Overdrive.</a>
                 </div>
             </div>
         </footer>

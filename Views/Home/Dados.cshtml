@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Impacto";
+    ViewData["Title"] = "Dados";
 }
 <div class="wrapper">
     <div class="sidebar" data="blue">
@@ -22,13 +22,13 @@
                         <p>O Projeto</p>
                     </a>
                 </li>
-                <li class="active ">
+                <li>
                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Impacto">
                         <i class="tim-icons icon-shape-star"></i>
                         <p>Impacto</p>
                     </a>
                 </li>
-                <li>
+                <li class="active ">
                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Dados">
                         <i class="tim-icons icon-check-2"></i>
                         <p>Dados</p>
@@ -61,7 +61,7 @@
                             <span class="navbar-toggler-bar bar3"></span>
                         </button>
                     </div>
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Impacto">Impacto</a>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Dados">Dados</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
@@ -90,55 +90,54 @@
         <div class="content">
 
 
+
             <div class="row">
 
-                <div class="col-md-5">
+                <div class="col-md-12">
                     <div class="card mb-3">
-                        <img class="card-img-top" src="../assets/img/turtle1.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="../assets/img/tunnel.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h2 class="card-title">Como o Turtle Project vai impactar o ambiente marinho?</h2>
-                            <p class="card-text">O projeto propõe-se a minimizar os impactos causados pela ação humana em ambientes marinhos. Com a redução do tráfego de embarcações, que transportam mercadorias por diversas rotas ao longo da América do Sul, América Central e América do Norte, objetivamos manter as condições de equilíbrio, das diversas formas de vida marinha, conquistadas com a manutenção da quarentena, diminuindo desse modo, o acesso de humanos nessas regiões. A utilização dos túneis submersos impacta também na velocidade da entrega das cargas, que devido a utilização da tecnologia de levitação magnética, transporta as cargas em uma velocidade muito mais rápida, o que ao mesmo tempo, contribui para diminuir a distância entre os lugares e a longo prazo reduz os custos de entregas.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-7">
-                    <div class="card mb-3">
-                        <img class="card-img-top" src="../assets/img/rotas-maritimas.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h2 class="card-title">Rotas Maritimas</h2>
-                            <p class="card-text">As atuais rotas marítimas as quais são definidas pela frequência de uso relacionadas á espessura dos traços. São essenciais para o funcionamento do comércio exterior, visto que são por onde os navios cargueiros passam ao transportar mercadorias de um país para o outro.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <img class="card-img-top" src="../assets/img/ee1.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h2 class="card-title">Rota Leste</h2>
+                            <h2 class="card-title">Túneis</h2>
                             <p class="card-text">
-                                Passando pela Argentina (Mar del Plata), Brasil (Santos), Venezuela(Porto da Espanha), República Dominicana (Santo Domingo), Estados Unidos (Miami - New York),Canadá(Providence), Irlanda (Dublin), Inglaterra (Cardiff), França (Rouen) e Itália (Livorno)
+                                Há duas razões que impulsionam o desenvolvimento de túneis: o crescimento desenfreado de tráfego individual e o aumento exponencial da gestão e comércio de bens, que pretende chegar, tão rápido e tão facilmente quanto possível, todos os cantos do mundo. A necessidade contínua de "ir mais, mais rápido e mais longe" é claramente refletida na extensão da rede de tráfego. Criam-se as vias de circulação exigidas, que economizam tempo e custos, que são seguras e onde os obstáculos foram removidos o mais possível.
+                                As equipas para as estruturas de túneis são geralmente constituídas por geólogos, geodesistas, especialistas em terraplenagem, engenharia de solo e construção de estradas, organização e tecnologia de betão, bem como organizadores de transporte e segurança operacional.
+                                Os principais critérios para a selecção do tipo de construção e da estrutura de suporte de carga são as secções transversais do túnel e os seus comprimentos. Além disso, existem curvas relacionados com objectos e inclinações ao longo do túnel, bem como as geometrias diferentes em largura e altura que têm de ser considerados. Essas mudanças na secção transversal são necessários para a integração do parque e de paragens de emergência, fuga e de acesso às galerias ou construções que ligam os túneis adjacentes uns com os outros ou que levam à superfície.
+                                Visando otimizar a resistência da estrutura contra a pressão realizada (calculando em uma profundidade de 100m abaixo do nível do mar), o projeto será constituído de aço e concreto. O uso de máquinas tuneladoras não será uma opção viável devido ao solo instável, o qual pode favorecer o uso de mão-de-obra humana e explosões controladas quando lidamos com terrenos propensos à terremotos.
+                                Priorizar rotas iniciais conectando a América central à América do Sul, tendo posteriormente a extensão para o oriente via acesso aos estreitos entre Alaska - Rússia e acessando a Coreia e futuramente Japão, Rússia e China.
                             </p>
-                            
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <img class="card-img-top" src="../assets/img/dd1.jpeg" alt="Card image cap">
+
+
+
+                <div class="col-md-8">
+                    <div class="card card-nav-tabs">
+                        <h2 class="card-header card-header-info">Relação de Exportações / Transportações Brasileiras</h2>
                         <div class="card-body">
-                            <h2 class="card-title">Rota Oeste</h2>
-                            <p class="card-text">Passando por Brasil (Santos), Argentina (Mar del Plata - Santiago), Bolívia(Sucre), Perú (Lima), Colombia (Buenaventura), México (Los Mochis), Estados Unidos (San Francisco - Anchorage (Alaska), Canadá (Prince Rupert / Vancouver), Rússia (Magadan), Japão (Sendai / Nagoya), China (Shangai - Hong Kong)</p>
-                            
+                            <p class="card-text">
+                                Os principais países de destino das exportações brasileiras em 2019 foram China, Hong Kong e Macau (US$ 65,389 bilhões);<br /> Estados Unidos (US$ 29,556 bilhões);<br /> Países Baixos (US$ 10,100 bilhões);<br /> Argentina (US$ 9,714 bilhões);<br /> Japão (US$ 5,410 bilhões). Por mercados compradores, cresceram as vendas para Oceania (+12,8%), Oriente Médio (+9,1%) e Estados Unidos (+1,8%).
+                                houve redução nas compras de América Central e Caribe (-33,3%), África (-16,6%), Oceania (-14,8%), União Europeia (-5,2%), Mercosul (-4,1%), Oriente Médio (-3%) e Ásia (-1,4%). Por outro lado, aumentaram as importações originárias dos Estados Unidos (+2,6%).
+                                Os principais países de origem das importações foram China, Hong Kong e Macau (US$ 35,881 bilhões), Estados Unidos (US$ 30,086 bilhões), Argentina (US$ 10,552 bilhões), Alemanha (US$ 10,281 bilhões) e Coreia do Sul (US$ 4,706 bilhões).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card card-nav-tabs">
+                        <h2 class="card-header card-header-info">Relação de Importações dentro da América Latina</h2>
+                        <div class="card-body">
+                            <p class="card-text">América Central - Brasil: As exportações para a América Central em algo entre US$ 500 milhões e US$ 1 bilhão, dos quais uma parte seria re-exportado não só para os EUA, mas para outros países menores do Caribe. As exportações para a América Central somam atualmente menos de US$ 2 bilhões por ano.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
 
 
 

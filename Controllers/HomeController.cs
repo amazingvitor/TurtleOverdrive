@@ -28,7 +28,7 @@ namespace TurtleOverdrive.Controllers
             return View();
         }
 
-        public IActionResult Viabilidade()
+        public IActionResult Dados()
         {
             return View();
         }
@@ -39,6 +39,11 @@ namespace TurtleOverdrive.Controllers
         }
 
         public IActionResult Custos()
+        {
+            return View();
+        }
+
+        public IActionResult Equipe()
         {
             return View();
         }
